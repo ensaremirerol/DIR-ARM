@@ -21,7 +21,8 @@
 
 
 module PCPlus(
+    input reg [7:0] old_pc,
     output reg [7:0] pc
     );
-    assign pc = pc + 1;
+    assign pc = old_pc + 1;
 endmodule

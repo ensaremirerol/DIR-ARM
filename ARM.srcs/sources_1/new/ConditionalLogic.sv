@@ -21,6 +21,8 @@
 
 
 // TODO: Change how conditions proccesed.
+// TODO: FlagW -> 2bit
+// Change Flop4BitwEnable -> Flop2BitEnable
 module ConditionalLogic(
     input reg clk, PCS, MEMW, REGW, dNOW, dPOP, dPUSH, FlagW,
     input reg [3:0] flags, cond,
@@ -35,8 +37,8 @@ module ConditionalLogic(
             PCSrc <= PCS;
             MemWrite <= MEMW && ~dNOW;
             RegWrite <= REGW && ~dNOW;
-            Pop <= dPOP;
-            Push <= dPUSH;
+            Pop <= dPOP && clk;
+            Push <= dPUSH && clk;
         end
     end
 endmodule

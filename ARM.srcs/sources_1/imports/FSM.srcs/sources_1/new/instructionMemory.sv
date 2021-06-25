@@ -21,20 +21,12 @@
 
 
 module instructionMemory(
-    input clk,
-    output reg [13:0] rd
+    input reg [7:0] PC,
+    output reg [27:0] rd
     );
-    reg [1:0] pc;
-    reg [13:0] memory [3:0];
-    flop pc_flop(clk, pc+1, pc);
-    assign rd = memory[pc];
-        
+    reg [27:0] memory [8'b11111111:0];
+    assign rd = memory[PC];   
     initial begin
-        memory[0] = 14'b00000000011111;
-        memory[1] = 14'b01111100001110;
-        memory[2] = 14'b10111111101101;
-        memory[3] = 14'b11110111111011;
-        pc = 0;
-        rd = memory[pc];
+        rd = memory[PC];
     end
 endmodule

@@ -21,11 +21,17 @@
 
 
 module instruction(
-input reg [13:0] instruction,
-output reg [1:0] alu_c, output reg [3:0] REGWRT, REG1, REG2 
+    input reg [24:0] instruction,
+    output reg [3:0] cond, op, output reg [2:0] FUNC, REGD, REGA, REGB, output reg [7:0] Imm 
     );
-    assign alu_c = instruction[13:12];
-    assign REGWRT = instruction[11:8];
-    assign REG1 = instruction[7:4];
-    assign REG2 = instruction[3:0];
+    always @ (*)
+    begin
+        cond <= instruction[24:21];
+        op <= instruction[20:17];
+        FUNC <= instruction[16:14];
+        REGD <= instruction[13:11];
+        REGA <= instruction[10:8];
+        REGB <= instruction[7:5];
+        Imm <= instruction[7:0];
+    end
 endmodule
