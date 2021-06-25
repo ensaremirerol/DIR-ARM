@@ -173,5 +173,133 @@ module MainDecoder(
                 ALUOP = 0;
                 AluSrc = 0;
                 end
+                
+            CMP: begin
+                PCS = 0;
+                ResultSel = 0;
+                MEMW = 0;
+                ImmSrc = 0;
+                ZeroSrc = 0;
+                REGW = 0;
+                RegSrc = 0;
+                dNOW = 1;
+                dPOP = 0;
+                dPUSH = 0;
+                MemWDSel = 0;
+                ALUOP = 1;
+                AluSrc = 0;
+                end
+                
+            CMP_IMM: begin
+                PCS = 0;
+                ResultSel = 0;
+                MEMW = 0;
+                ImmSrc = 1;
+                ZeroSrc = 0;
+                REGW = 0;
+                RegSrc = 0;
+                dNOW = 1;
+                dPOP = 0;
+                dPUSH = 0;
+                MemWDSel = 0;
+                ALUOP = 1;
+                AluSrc = 0;
+                end
+                
+            PUSH: begin
+                PCS = 0;
+                ResultSel = 0;
+                MEMW = 1;
+                ImmSrc = 0;
+                ZeroSrc = 1;
+                REGW = 0;
+                RegSrc = 3'b101;
+                dNOW = 0;
+                dPOP = 0;
+                dPUSH = 1;
+                MemWDSel = 0;
+                ALUOP = 0;
+                AluSrc = 0;
+                end
+                
+            PUSH_PC: begin
+                PCS = 0;
+                ResultSel = 0;
+                MEMW = 1;
+                ImmSrc = 0;
+                ZeroSrc = 1;
+                REGW = 0;
+                RegSrc = 3'b101;
+                dNOW = 0;
+                dPOP = 0;
+                dPUSH = 1;
+                MemWDSel = 2;
+                ALUOP = 0;
+                AluSrc = 0;
+                end
+                
+            POP: begin
+                PCS = 0;
+                ResultSel = 1;
+                MEMW = 0;
+                ImmSrc = 0;
+                ZeroSrc = 1;
+                REGW = 1;
+                RegSrc = 3'b100;
+                dNOW = 0;
+                dPOP = 1;
+                dPUSH = 0;
+                MemWDSel = 0;
+                ALUOP = 0;
+                AluSrc = 0;
+                end
+                
+            RET: begin
+                PCS = 1;
+                ResultSel = 1;
+                MEMW = 0;
+                ImmSrc = 0;
+                ZeroSrc = 1;
+                REGW = 0;
+                RegSrc = 3'b100;
+                dNOW = 0;
+                dPOP = 1;
+                dPUSH = 0;
+                MemWDSel = 0;
+                ALUOP = 0;
+                AluSrc = 0;
+                end
+                
+            JMP: begin
+                PCS = 1;
+                ResultSel = 2;
+                MEMW = 0;
+                ImmSrc = 0;
+                ZeroSrc = 1;
+                REGW = 0;
+                RegSrc = 0;
+                dNOW = 0;
+                dPOP = 0;
+                dPUSH = 0;
+                MemWDSel = 0;
+                ALUOP = 0;
+                AluSrc = 0;
+                end
+                
+            SKP: begin
+                PCS = 1;
+                ResultSel = 0;
+                MEMW = 0;
+                ImmSrc = 0;
+                ZeroSrc = 1;
+                REGW = 0;
+                RegSrc = 3'b010;
+                dNOW = 0;
+                dPOP = 0;
+                dPUSH = 0;
+                MemWDSel = 0;
+                ALUOP = 0;
+                AluSrc = 0;
+                end
         endcase
 endmodule
