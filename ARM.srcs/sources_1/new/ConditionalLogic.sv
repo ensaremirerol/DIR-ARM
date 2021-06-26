@@ -79,8 +79,8 @@ module ConditionalLogic(
         PCSrc <= PCS && condEx;
         MemWrite <= MEMW && condEx && ~dNOW;
         RegWrite <= REGW && condEx && ~dNOW;
-        Pop <= dPOP && clk && condEx;
-        Push <= dPUSH && clk && condEx;
+        Pop <= dPOP && condEx;
+        Push <= dPUSH && condEx;
     end
     initial begin
         s_flags = 0;
