@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ProcessorTest_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ProcessorTest" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="71301fs"></ZoomEndTime>
+      <Cursor1Time time="33100fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="156"></NameColumnWidth>
+      <ValueColumnWidth column_width="81"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/ProcessorTest/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ProcessorTest/dut/reg_file/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="group90" type="group">
+      <obj_property name="label">Register</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ProcessorTest/dut/reg_file/A1" type="array">
+         <obj_property name="ElementShortName">A1[2:0]</obj_property>
+         <obj_property name="ObjectShortName">A1[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/reg_file/A2" type="array">
+         <obj_property name="ElementShortName">A2[2:0]</obj_property>
+         <obj_property name="ObjectShortName">A2[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/reg_file/A3" type="array">
+         <obj_property name="ElementShortName">A3[2:0]</obj_property>
+         <obj_property name="ObjectShortName">A3[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/reg_file/WD3" type="array">
+         <obj_property name="ElementShortName">WD3[7:0]</obj_property>
+         <obj_property name="ObjectShortName">WD3[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/reg_file/R7" type="array">
+         <obj_property name="ElementShortName">R7[7:0]</obj_property>
+         <obj_property name="ObjectShortName">R7[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/reg_file/R6" type="array">
+         <obj_property name="ElementShortName">R6[7:0]</obj_property>
+         <obj_property name="ObjectShortName">R6[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/reg_file/WE3" type="logic">
+         <obj_property name="ElementShortName">WE3</obj_property>
+         <obj_property name="ObjectShortName">WE3</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/reg_file/RD1" type="array">
+         <obj_property name="ElementShortName">RD1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">RD1[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/reg_file/RD2" type="array">
+         <obj_property name="ElementShortName">RD2[7:0]</obj_property>
+         <obj_property name="ObjectShortName">RD2[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/reg_file/register" type="array">
+         <obj_property name="ElementShortName">register[7:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">register[7:0][7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group2077" type="group">
+      <obj_property name="label">SP</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ProcessorTest/dut/sp_ctrl/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/sp_ctrl/pop" type="logic">
+         <obj_property name="ElementShortName">pop</obj_property>
+         <obj_property name="ObjectShortName">pop</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/sp_ctrl/push" type="logic">
+         <obj_property name="ElementShortName">push</obj_property>
+         <obj_property name="ObjectShortName">push</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/sp_ctrl/sp" type="array">
+         <obj_property name="ElementShortName">sp[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sp[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group109" type="group">
+      <obj_property name="label">Memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/ProcessorTest/dut/data_mem/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/data_mem/WE" type="logic">
+         <obj_property name="ElementShortName">WE</obj_property>
+         <obj_property name="ObjectShortName">WE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/data_mem/A" type="array">
+         <obj_property name="ElementShortName">A[7:0]</obj_property>
+         <obj_property name="ObjectShortName">A[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/data_mem/WD" type="array">
+         <obj_property name="ElementShortName">WD[7:0]</obj_property>
+         <obj_property name="ObjectShortName">WD[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/data_mem/RD" type="array">
+         <obj_property name="ElementShortName">RD[7:0]</obj_property>
+         <obj_property name="ObjectShortName">RD[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/data_mem/memory" type="array">
+         <obj_property name="ElementShortName">memory[255:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[255:0][7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group131" type="group">
+      <obj_property name="label">ALU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/ProcessorTest/dut/alu/a" type="array">
+         <obj_property name="ElementShortName">a[7:0]</obj_property>
+         <obj_property name="ObjectShortName">a[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/alu/b" type="array">
+         <obj_property name="ElementShortName">b[7:0]</obj_property>
+         <obj_property name="ObjectShortName">b[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/alu/control" type="array">
+         <obj_property name="ElementShortName">control[1:0]</obj_property>
+         <obj_property name="ObjectShortName">control[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/alu/y" type="array">
+         <obj_property name="ElementShortName">y[7:0]</obj_property>
+         <obj_property name="ObjectShortName">y[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/alu/flags" type="array">
+         <obj_property name="ElementShortName">flags[3:0]</obj_property>
+         <obj_property name="ObjectShortName">flags[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/alu/cout" type="logic">
+         <obj_property name="ElementShortName">cout</obj_property>
+         <obj_property name="ObjectShortName">cout</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/alu/sum" type="array">
+         <obj_property name="ElementShortName">sum[8:0]</obj_property>
+         <obj_property name="ObjectShortName">sum[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/alu/d0" type="array">
+         <obj_property name="ElementShortName">d0[7:0]</obj_property>
+         <obj_property name="ObjectShortName">d0[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/alu/d2" type="array">
+         <obj_property name="ElementShortName">d2[7:0]</obj_property>
+         <obj_property name="ObjectShortName">d2[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/alu/d3" type="array">
+         <obj_property name="ElementShortName">d3[7:0]</obj_property>
+         <obj_property name="ObjectShortName">d3[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/alu/sB" type="array">
+         <obj_property name="ElementShortName">sB[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sB[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/alu/oVFlogic1" type="logic">
+         <obj_property name="ElementShortName">oVFlogic1</obj_property>
+         <obj_property name="ObjectShortName">oVFlogic1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/alu/oVFlogic2" type="logic">
+         <obj_property name="ElementShortName">oVFlogic2</obj_property>
+         <obj_property name="ObjectShortName">oVFlogic2</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/ProcessorTest/dut/inst_mem/rd" type="array">
+      <obj_property name="ElementShortName">rd[24:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[24:0]</obj_property>
+   </wvobject>
+</wave_config>

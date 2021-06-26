@@ -24,11 +24,9 @@ module SPControl(
     input reg clk, pop, push,
     output reg [7:0] sp
     );
-    reg s_push;
-    Flop1Bit pushFlop(clk, push, s_push);
+    always @(posedge pop)
+        sp<=sp+1;
     always @(posedge clk)
-        if(pop)sp<=sp+1;
-    always @(negedge clk) 
-        if(s_push)sp<=sp-1;
+        if(push)sp<=sp-1;
     initial sp = 8'b11111111;
 endmodule

@@ -29,4 +29,6 @@ module PCControl(
     mux_2 pcSelector(pcp, result, pcsrc, _pc);
     always @(posedge clk)
         pc <= _pc;
+    initial pc = 0;
+    initial _pc = 0;
 endmodule

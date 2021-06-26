@@ -33,12 +33,12 @@ module Processor(
     PCPlus pc_skp(PCP, PCPP);
     PCControl pc_ctrl(clk, PCSrc, RESULT, PCP, PC);
     instructionMemory inst_mem(PC, INST);
-    instruction(INST, COND, OP, FUNC, RD, RA, RB, IMM);
+    instruction inst_splitter(INST, COND, OP, FUNC, RD, tRA, tRB, IMM);
     ControlUnit control_u(clk, FLAGS, COND, OP, FUNC, PCSrc,
                           MemWrite, RegWrite, Pop, Push, ImmSrc,
                           ZeroSrc, AluSrc, RegSrc, ResultSel, MemWDSel, AluControl);
-    mux_4 ra_selector(tRA, 7, 6, 0, RegSrc[2:1], RA);
-    mux_2 rb_selector(tRB, RD, RegSrc[0], RB);
+    mux_4_3bit ra_selector(tRA, 7, 6, 0, RegSrc[2:1], RA);
+    mux_2_3bit rb_selector(tRB, RD, RegSrc[0], RB);
     SPControl sp_ctrl(clk, Pop, Push, SP);
     register reg_file(clk, RA, RB, RD, RESULT, PCPP, SP, RegWrite, RD1, RD2);
     mux_2 imm_select(RD2, IMM, ImmSrc, ALUSRC2_1);

@@ -21,10 +21,10 @@
 
 
 module Flop1Bit(
-    input reg clk, e,
+    input reg clk,
     input reg d,
     output reg q
     );
     always @ (posedge clk)
-        if(e) q<=d;
+        q<=d;
 endmodule

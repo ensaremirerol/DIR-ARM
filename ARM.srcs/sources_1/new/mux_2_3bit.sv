@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 06/25/2021 06:53:23 PM
+// Create Date: 06/26/2021 05:55:05 PM
 // Design Name: 
-// Module Name: DataMemory
+// Module Name: mux_2_3bit
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,16 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module DataMemory(input reg clk, WE,
-    input reg [7:0] A, WD,
-    output reg [7:0] RD
-    );
-    reg [7:0] memory [8'b11111111:0];
-    always @ (posedge clk)
-        if(WE) memory[A]<=WD;
-    always @ (*)
-        RD<=memory[A];   
-    initial begin
-        for(int i = 0; i < $size(memory); i++) memory[i] = 0;
-    end
+module mux_2_3bit(input logic [2:0] d0, d1,
+    input logic s,
+    output logic [2:0] y);
+    
+    assign y = s ? d1 : d0;
 endmodule
