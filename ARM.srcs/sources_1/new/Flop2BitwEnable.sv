@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 06/23/2021 11:06:45 PM
+// Create Date: 06/26/2021 12:01:07 PM
 // Design Name: 
-// Module Name: SPControl
+// Module Name: Flop2BitwEnable
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,15 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module SPControl(
-    input reg clk, pop, push,
-    output reg [7:0] sp
+module Flop2BitwEnable(
+    input reg clk, e,
+    input reg [1:0] d,
+    output reg [1:0] q
     );
-    reg s_push;
-    Flop1Bit pushFlop(clk, push, s_push);
-    always @(posedge clk)
-        if(pop)sp<=sp+1;
-    always @(negedge clk) 
-        if(s_push)sp<=sp-1;
-    initial sp = 8'b11111111;
+    always @ (posedge clk)
+        if(e) q<=d;
 endmodule

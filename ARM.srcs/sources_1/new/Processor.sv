@@ -39,7 +39,7 @@ module Processor(
                           ZeroSrc, AluSrc, RegSrc, ResultSel, MemWDSel, AluControl);
     mux_4 ra_selector(tRA, 7, 6, 0, RegSrc[2:1], RA);
     mux_2 rb_selector(tRB, RD, RegSrc[0], RB);
-    SPControl sp_ctrl(Pop, Push, SP);
+    SPControl sp_ctrl(clk, Pop, Push, SP);
     register reg_file(clk, RA, RB, RD, RESULT, PCPP, SP, RegWrite, RD1, RD2);
     mux_2 imm_select(RD2, IMM, ImmSrc, ALUSRC2_1);
     mux_2 zero_select(ALUSRC2_1, 0, ZeroSrc, ALUSRC2_2);

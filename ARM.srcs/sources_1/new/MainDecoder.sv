@@ -290,8 +290,8 @@ module MainDecoder(
                 PCS = 1;
                 ResultSel = 0;
                 MEMW = 0;
-                ImmSrc = 0;
-                ZeroSrc = 1;
+                ImmSrc = 1;
+                ZeroSrc = 0;
                 REGW = 0;
                 RegSrc = 3'b010;
                 dNOW = 0;

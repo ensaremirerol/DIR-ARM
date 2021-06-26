@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 06/25/2021 10:54:31 PM
+// Create Date: 06/26/2021 01:50:07 PM
 // Design Name: 
-// Module Name: Flop4wEnable
+// Module Name: Flop1Bit
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,10 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Flop4wEnable(
+module Flop1Bit(
     input reg clk, e,
-    input reg [3:0] d,
-    output reg [3:0] q
+    input reg d,
+    output reg q
     );
     always @ (posedge clk)
         if(e) q<=d;
