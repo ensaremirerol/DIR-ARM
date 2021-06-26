@@ -28,7 +28,6 @@ module ConditionalLogic(
     
     // Source: https://community.arm.com/developer/ip-products/processors/b/processors-ip-blog/posts/condition-codes-1-condition-flags-and-codes
     
-    // Merhaba
     // Flags
     // 0: Z
     // 1: N
