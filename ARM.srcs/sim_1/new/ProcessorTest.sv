@@ -26,7 +26,7 @@ module ProcessorTest(
     reg clk;
     initial begin
         clk = 0;
-        forever #10 clk=~clk;
+        forever #1 clk=~clk;
     end
     Processor dut(clk);
     
