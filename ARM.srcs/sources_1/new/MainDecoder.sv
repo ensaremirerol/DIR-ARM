@@ -19,6 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+// Decodes given operation code and sets signals according to that
+// TR: Verilen operasyon koduna göre sinyalleri ayarlar.
 
 module MainDecoder(
     input reg [3:0] op,
@@ -27,6 +29,8 @@ module MainDecoder(
     output reg [2:0] RegSrc,
     output reg [1:0] ResultSel, MemWDSel
     );
+    // All operations
+    // Tüm komutlar
     parameter ALU = 4'b0000;
     parameter ALU_IMM = 4'b1000;
     parameter SHH = 4'b0001;

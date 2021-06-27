@@ -19,6 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+// Memory of Instructions
+// TR: Komutlar? tutan Haf?za
 
 module instructionMemory(
     input reg [7:0] PC,

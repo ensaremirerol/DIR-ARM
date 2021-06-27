@@ -20,6 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
+// 2Bit Flop with Enable signal
+
 module Flop2BitwEnable(
     input reg clk, e,
     input reg [1:0] d,

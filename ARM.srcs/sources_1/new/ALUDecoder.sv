@@ -19,6 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+// Sets ALU signals according to given values
+// TR: Verilen de?erlere göre ALU sinayallerini ayarlar
 
 module ALUDecoder(
     input reg ALUOP, ALUSrc, dNOW,
@@ -28,6 +30,8 @@ module ALUDecoder(
     
     always @ (*)
     begin
+        // These signal values represents CMP command.
+        // Bu kombinasyon CMP komutunu temsil etmektedir.
         if(ALUOP && !ALUSrc && dNOW)
         begin
             AluControl <= 1;
@@ -37,6 +41,8 @@ module ALUDecoder(
         begin
             if(ALUOP) AluControl <= Func[1:0];
             else AluControl <= 0;
+            // Shifter i?lemleri FLAG atayamaz!
+            // AND VE OR i?lemleri C ve V flagini atayamaz!
             if(ALUOP && !ALUSrc && Func[2]) begin
                 if(Func[1:0] == 0 && Func[1:0] == 1) FlagW[1] <= 1;
                 else FlagW[1] <= 0;

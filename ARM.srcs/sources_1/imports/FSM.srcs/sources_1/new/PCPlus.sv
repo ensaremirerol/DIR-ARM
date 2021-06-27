@@ -19,6 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+// Adds one to old_pc (Writed to tidy up the code!)
+// TR: old_pc ye 1 ekler (Kodu temizlemek içi yaz?ld?!)
 
 module PCPlus(
     input reg [7:0] old_pc,

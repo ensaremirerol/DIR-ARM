@@ -19,6 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+// Splits given instruction for next modules
+// TR: Sonraki modüller için komutlar? parçalar
 
 module instruction(
     input reg [24:0] instruction,
