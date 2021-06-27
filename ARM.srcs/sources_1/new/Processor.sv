@@ -46,7 +46,7 @@ module Processor(
     ALU alu(RD1, ALUSRC2_2, AluControl, ALU_RESULT, FLAGS);
     Shifter shifter(RD1, ALU_SRC2_1, AluControl, SHIFTER_RESULT);
     mux_2 alu_shifter_select(ALU_RESULT, SHIFTER_RESULT, AluSrc, ALU_SHIFTER_SEL);
-    mux_4 data_mem_wd_select(RD2, IMM, PCP, 0, MemWDSel, DATA_MEM_WD);
+    mux_4 data_mem_wd_select(RD2, IMM, PCPP, 0, MemWDSel, DATA_MEM_WD);
     DataMemory data_mem(clk, MemWrite, ALU_SHIFTER_SEL, DATA_MEM_WD, DATA_MEM_RD);
     mux_4 result_sel(ALU_SHIFTER_SEL, DATA_MEM_RD, IMM, 0, ResultSel, RESULT);
 endmodule

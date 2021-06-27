@@ -24,8 +24,8 @@ module SPControl(
     input reg clk, pop, push,
     output reg [7:0] sp
     );
-    always @(posedge pop)
-        sp<=sp+1;
+    always @(negedge clk)
+        if(pop)sp<=sp+1;
     always @(posedge clk)
         if(push)sp<=sp-1;
     initial sp = 8'b11111111;

@@ -11,15 +11,18 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="71301fs"></ZoomEndTime>
-      <Cursor1Time time="33100fs"></Cursor1Time>
+      <ZoomStartTime time="455867fs"></ZoomStartTime>
+      <ZoomEndTime time="600668fs"></ZoomEndTime>
+      <Cursor1Time time="524667fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="156"></NameColumnWidth>
-      <ValueColumnWidth column_width="81"></ValueColumnWidth>
+      <ValueColumnWidth column_width="73"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="9" />
+   <wave_markers>
+      <marker time="511880" label="" />
+   </wave_markers>
    <wvobject fp_name="/ProcessorTest/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -32,33 +35,9 @@
       <obj_property name="label">Register</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="/ProcessorTest/dut/reg_file/A1" type="array">
-         <obj_property name="ElementShortName">A1[2:0]</obj_property>
-         <obj_property name="ObjectShortName">A1[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/ProcessorTest/dut/reg_file/A2" type="array">
-         <obj_property name="ElementShortName">A2[2:0]</obj_property>
-         <obj_property name="ObjectShortName">A2[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/ProcessorTest/dut/reg_file/A3" type="array">
-         <obj_property name="ElementShortName">A3[2:0]</obj_property>
-         <obj_property name="ObjectShortName">A3[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/ProcessorTest/dut/reg_file/WD3" type="array">
-         <obj_property name="ElementShortName">WD3[7:0]</obj_property>
-         <obj_property name="ObjectShortName">WD3[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/ProcessorTest/dut/reg_file/R7" type="array">
-         <obj_property name="ElementShortName">R7[7:0]</obj_property>
-         <obj_property name="ObjectShortName">R7[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/ProcessorTest/dut/reg_file/R6" type="array">
-         <obj_property name="ElementShortName">R6[7:0]</obj_property>
-         <obj_property name="ObjectShortName">R6[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/ProcessorTest/dut/reg_file/WE3" type="logic">
-         <obj_property name="ElementShortName">WE3</obj_property>
-         <obj_property name="ObjectShortName">WE3</obj_property>
+      <wvobject fp_name="/ProcessorTest/dut/reg_file/register" type="array">
+         <obj_property name="ElementShortName">register[7:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">register[7:0][7:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/ProcessorTest/dut/reg_file/RD1" type="array">
          <obj_property name="ElementShortName">RD1[7:0]</obj_property>
@@ -68,9 +47,13 @@
          <obj_property name="ElementShortName">RD2[7:0]</obj_property>
          <obj_property name="ObjectShortName">RD2[7:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/ProcessorTest/dut/reg_file/register" type="array">
-         <obj_property name="ElementShortName">register[7:0][7:0]</obj_property>
-         <obj_property name="ObjectShortName">register[7:0][7:0]</obj_property>
+      <wvobject fp_name="/ProcessorTest/dut/reg_file/A1" type="array">
+         <obj_property name="ElementShortName">A1[2:0]</obj_property>
+         <obj_property name="ObjectShortName">A1[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/reg_file/A2" type="array">
+         <obj_property name="ElementShortName">A2[2:0]</obj_property>
+         <obj_property name="ObjectShortName">A2[2:0]</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group2077" type="group">
@@ -181,5 +164,82 @@
    <wvobject fp_name="/ProcessorTest/dut/inst_mem/rd" type="array">
       <obj_property name="ElementShortName">rd[24:0]</obj_property>
       <obj_property name="ObjectShortName">rd[24:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ProcessorTest/dut/pc_ctrl/pc" type="array">
+      <obj_property name="ElementShortName">pc[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group234" type="group">
+      <obj_property name="label">Cond.</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/PCS" type="logic">
+         <obj_property name="ElementShortName">PCS</obj_property>
+         <obj_property name="ObjectShortName">PCS</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/MEMW" type="logic">
+         <obj_property name="ElementShortName">MEMW</obj_property>
+         <obj_property name="ObjectShortName">MEMW</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/REGW" type="logic">
+         <obj_property name="ElementShortName">REGW</obj_property>
+         <obj_property name="ObjectShortName">REGW</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/dNOW" type="logic">
+         <obj_property name="ElementShortName">dNOW</obj_property>
+         <obj_property name="ObjectShortName">dNOW</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/dPOP" type="logic">
+         <obj_property name="ElementShortName">dPOP</obj_property>
+         <obj_property name="ObjectShortName">dPOP</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/dPUSH" type="logic">
+         <obj_property name="ElementShortName">dPUSH</obj_property>
+         <obj_property name="ObjectShortName">dPUSH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/FlagW" type="array">
+         <obj_property name="ElementShortName">FlagW[1:0]</obj_property>
+         <obj_property name="ObjectShortName">FlagW[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/flags" type="array">
+         <obj_property name="ElementShortName">flags[3:0]</obj_property>
+         <obj_property name="ObjectShortName">flags[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/cond" type="array">
+         <obj_property name="ElementShortName">cond[3:0]</obj_property>
+         <obj_property name="ObjectShortName">cond[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/PCSrc" type="logic">
+         <obj_property name="ElementShortName">PCSrc</obj_property>
+         <obj_property name="ObjectShortName">PCSrc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/MemWrite" type="logic">
+         <obj_property name="ElementShortName">MemWrite</obj_property>
+         <obj_property name="ObjectShortName">MemWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/RegWrite" type="logic">
+         <obj_property name="ElementShortName">RegWrite</obj_property>
+         <obj_property name="ObjectShortName">RegWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/Pop" type="logic">
+         <obj_property name="ElementShortName">Pop</obj_property>
+         <obj_property name="ObjectShortName">Pop</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/Push" type="logic">
+         <obj_property name="ElementShortName">Push</obj_property>
+         <obj_property name="ObjectShortName">Push</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/s_flags" type="array">
+         <obj_property name="ElementShortName">s_flags[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_flags[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/condEx" type="logic">
+         <obj_property name="ElementShortName">condEx</obj_property>
+         <obj_property name="ObjectShortName">condEx</obj_property>
+      </wvobject>
    </wvobject>
 </wave_config>
