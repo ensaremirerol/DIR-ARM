@@ -30,7 +30,8 @@ module ControlUnit(
     output reg [1:0] ResultSel, MemWDSel,
     output reg [1:0] AluControl
     );
-    wire PCS, MEMW, REGW, dNOW, dPOP, dPUSH, FlagW;
+    wire PCS, MEMW, REGW, dNOW, dPOP, dPUSH;
+    wire [1:0] FlagW;
     Decoder dec(op, Func, PCS, MEMW, REGW, dNOW, dPOP, dPUSH, ImmSrc, ZeroSrc, AluSrc, RegSrc, ResultSel, MemWDSel, AluControl, FlagW);
     ConditionalLogic condLogic(clk, PCS, MEMW, REGW, dNOW, dPOP, dPUSH, FlagW, flags, cond, PCSrc, MemWrite, RegWrite, Pop, Push);
 endmodule

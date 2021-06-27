@@ -11,17 +11,17 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="455867fs"></ZoomStartTime>
-      <ZoomEndTime time="600668fs"></ZoomEndTime>
-      <Cursor1Time time="524667fs"></Cursor1Time>
+      <ZoomStartTime time="419880fs"></ZoomStartTime>
+      <ZoomEndTime time="564681fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="156"></NameColumnWidth>
       <ValueColumnWidth column_width="73"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="9" />
+   <WVObjectSize size="11" />
    <wave_markers>
-      <marker time="511880" label="" />
+      <marker time="500570" label="" />
    </wave_markers>
    <wvobject fp_name="/ProcessorTest/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
@@ -34,10 +34,10 @@
    <wvobject fp_name="group90" type="group">
       <obj_property name="label">Register</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/ProcessorTest/dut/reg_file/register" type="array">
          <obj_property name="ElementShortName">register[7:0][7:0]</obj_property>
          <obj_property name="ObjectShortName">register[7:0][7:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
       </wvobject>
       <wvobject fp_name="/ProcessorTest/dut/reg_file/RD1" type="array">
          <obj_property name="ElementShortName">RD1[7:0]</obj_property>
@@ -172,7 +172,6 @@
    <wvobject fp_name="group234" type="group">
       <obj_property name="label">Cond.</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/clk" type="logic">
          <obj_property name="ElementShortName">clk</obj_property>
          <obj_property name="ObjectShortName">clk</obj_property>
@@ -240,6 +239,95 @@
       <wvobject fp_name="/ProcessorTest/dut/control_u/condLogic/condEx" type="logic">
          <obj_property name="ElementShortName">condEx</obj_property>
          <obj_property name="ObjectShortName">condEx</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group247" type="group">
+      <obj_property name="label">AluDecoder</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/alu_decoder/ALUOP" type="logic">
+         <obj_property name="ElementShortName">ALUOP</obj_property>
+         <obj_property name="ObjectShortName">ALUOP</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/alu_decoder/ALUSrc" type="logic">
+         <obj_property name="ElementShortName">ALUSrc</obj_property>
+         <obj_property name="ObjectShortName">ALUSrc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/alu_decoder/dNOW" type="logic">
+         <obj_property name="ElementShortName">dNOW</obj_property>
+         <obj_property name="ObjectShortName">dNOW</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/alu_decoder/Func" type="array">
+         <obj_property name="ElementShortName">Func[2:0]</obj_property>
+         <obj_property name="ObjectShortName">Func[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/alu_decoder/AluControl" type="array">
+         <obj_property name="ElementShortName">AluControl[1:0]</obj_property>
+         <obj_property name="ObjectShortName">AluControl[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/alu_decoder/FlagW" type="array">
+         <obj_property name="ElementShortName">FlagW[1:0]</obj_property>
+         <obj_property name="ObjectShortName">FlagW[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group262" type="group">
+      <obj_property name="label">MainDecoder</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/m_decoder/op" type="array">
+         <obj_property name="ElementShortName">op[3:0]</obj_property>
+         <obj_property name="ObjectShortName">op[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/m_decoder/PCS" type="logic">
+         <obj_property name="ElementShortName">PCS</obj_property>
+         <obj_property name="ObjectShortName">PCS</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/m_decoder/MEMW" type="logic">
+         <obj_property name="ElementShortName">MEMW</obj_property>
+         <obj_property name="ObjectShortName">MEMW</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/m_decoder/REGW" type="logic">
+         <obj_property name="ElementShortName">REGW</obj_property>
+         <obj_property name="ObjectShortName">REGW</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/m_decoder/dNOW" type="logic">
+         <obj_property name="ElementShortName">dNOW</obj_property>
+         <obj_property name="ObjectShortName">dNOW</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/m_decoder/dPOP" type="logic">
+         <obj_property name="ElementShortName">dPOP</obj_property>
+         <obj_property name="ObjectShortName">dPOP</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/m_decoder/dPUSH" type="logic">
+         <obj_property name="ElementShortName">dPUSH</obj_property>
+         <obj_property name="ObjectShortName">dPUSH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/m_decoder/ALUOP" type="logic">
+         <obj_property name="ElementShortName">ALUOP</obj_property>
+         <obj_property name="ObjectShortName">ALUOP</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/m_decoder/ImmSrc" type="logic">
+         <obj_property name="ElementShortName">ImmSrc</obj_property>
+         <obj_property name="ObjectShortName">ImmSrc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/m_decoder/ZeroSrc" type="logic">
+         <obj_property name="ElementShortName">ZeroSrc</obj_property>
+         <obj_property name="ObjectShortName">ZeroSrc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/m_decoder/AluSrc" type="logic">
+         <obj_property name="ElementShortName">AluSrc</obj_property>
+         <obj_property name="ObjectShortName">AluSrc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/m_decoder/RegSrc" type="array">
+         <obj_property name="ElementShortName">RegSrc[2:0]</obj_property>
+         <obj_property name="ObjectShortName">RegSrc[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/m_decoder/ResultSel" type="array">
+         <obj_property name="ElementShortName">ResultSel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ResultSel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ProcessorTest/dut/control_u/dec/m_decoder/MemWDSel" type="array">
+         <obj_property name="ElementShortName">MemWDSel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">MemWDSel[1:0]</obj_property>
       </wvobject>
    </wvobject>
 </wave_config>

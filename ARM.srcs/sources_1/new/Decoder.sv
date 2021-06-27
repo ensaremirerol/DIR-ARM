@@ -29,7 +29,8 @@ module Decoder(
     output reg [1:0] ResultSel, MemWDSel,
     output reg [1:0] AluControl, FlagW
     );
-    wire ALUOP;
-    MainDecoder m_decoder(op, PCS, MEMW, REGW, dNOW, dPOP, dPUSH, ALUOP, ImmSrc, ZeroSrc, AluSrc, RegSrc, ResultSel, MemWDSel);
-    ALUDecoder alu_decoder(ALUOP, ALUSrc, dNOW, Func, AluControl, FlagW);
+    wire ALUOP, ALUSRC;
+    MainDecoder m_decoder(op, PCS, MEMW, REGW, dNOW, dPOP, dPUSH, ALUOP, ImmSrc, ZeroSrc, ALUSRC, RegSrc, ResultSel, MemWDSel);
+    ALUDecoder alu_decoder(ALUOP, ALUSRC, dNOW, Func, AluControl, FlagW);
+    always @ (*) AluSrc<=ALUSRC;
 endmodule

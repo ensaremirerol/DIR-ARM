@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sat Jun 26 23:09:36 2021">
+<application name="pa" timeStamp="Sun Jun 27 18:09:39 2021">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="8c71035cd5584b29a271ba5a5e2b3dc8" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -21,19 +21,19 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="EditDelete" value="5" type="JavaHandler"/>
 <property name="EditProperties" value="1" type="JavaHandler"/>
 <property name="EditUndo" value="6" type="JavaHandler"/>
-<property name="ExitApp" value="8" type="JavaHandler"/>
+<property name="ExitApp" value="9" type="JavaHandler"/>
 <property name="FlipToViewTaskRTLAnalysis" value="1" type="JavaHandler"/>
 <property name="MakeActiveDesign" value="1" type="JavaHandler"/>
 <property name="RunSchematic" value="14" type="JavaHandler"/>
-<property name="SaveFileProxyHandler" value="4" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="5" type="JavaHandler"/>
 <property name="SetTopNode" value="10" type="JavaHandler"/>
 <property name="ShowConnectivity" value="2" type="JavaHandler"/>
 <property name="ShowSimulationDefaultWaveFormView" value="2" type="JavaHandler"/>
 <property name="ShowSource" value="1" type="JavaHandler"/>
 <property name="ShowWorldView" value="1" type="JavaHandler"/>
-<property name="SimulationRelaunch" value="22" type="JavaHandler"/>
+<property name="SimulationRelaunch" value="30" type="JavaHandler"/>
 <property name="SimulationRestart" value="1" type="JavaHandler"/>
-<property name="SimulationRun" value="49" type="JavaHandler"/>
+<property name="SimulationRun" value="54" type="JavaHandler"/>
 <property name="ToggleAutoFitSelection" value="2" type="JavaHandler"/>
 <property name="ToggleCreatePblockMode" value="2" type="JavaHandler"/>
 <property name="ToggleSelectAreaMode" value="2" type="JavaHandler"/>
@@ -42,7 +42,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ViewTaskProjectManager" value="1" type="JavaHandler"/>
 <property name="ViewTaskRTLAnalysis" value="5" type="JavaHandler"/>
 <property name="ViewTaskSimulation" value="1" type="JavaHandler"/>
-<property name="WaveformSaveConfiguration" value="1" type="JavaHandler"/>
+<property name="WaveformSaveConfiguration" value="4" type="JavaHandler"/>
 </item>
 <item name="Gui Handlers">
 <property name="BaseDialog_CANCEL" value="1" type="GuiHandlerData"/>
@@ -57,30 +57,30 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="FPGAChooser_FPGA_TABLE" value="1" type="GuiHandlerData"/>
 <property name="FPGAChooser_PACKAGE" value="1" type="GuiHandlerData"/>
 <property name="FPGAChooser_SPEED" value="2" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="745" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="82" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="832" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="90" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_FIT" value="5" type="GuiHandlerData"/>
 <property name="HExceptionDialog_CONTINUE" value="2" type="GuiHandlerData"/>
 <property name="HExceptionDialog_EXIT" value="1" type="GuiHandlerData"/>
 <property name="InstanceMenu_FLOORPLANNING" value="24" type="GuiHandlerData"/>
 <property name="MainMenuMgr_CHECKPOINT" value="2" type="GuiHandlerData"/>
 <property name="MainMenuMgr_DESIGN_HUBS" value="4" type="GuiHandlerData"/>
-<property name="MainMenuMgr_EDIT" value="2" type="GuiHandlerData"/>
+<property name="MainMenuMgr_EDIT" value="6" type="GuiHandlerData"/>
 <property name="MainMenuMgr_EXPORT" value="1" type="GuiHandlerData"/>
-<property name="MainMenuMgr_FILE" value="2" type="GuiHandlerData"/>
-<property name="MainMenuMgr_FLOW" value="4" type="GuiHandlerData"/>
-<property name="MainMenuMgr_HELP" value="8" type="GuiHandlerData"/>
+<property name="MainMenuMgr_FILE" value="6" type="GuiHandlerData"/>
+<property name="MainMenuMgr_FLOW" value="6" type="GuiHandlerData"/>
+<property name="MainMenuMgr_HELP" value="10" type="GuiHandlerData"/>
 <property name="MainMenuMgr_IP" value="1" type="GuiHandlerData"/>
 <property name="MainMenuMgr_PROJECT" value="2" type="GuiHandlerData"/>
-<property name="MainMenuMgr_REPORTS" value="9" type="GuiHandlerData"/>
-<property name="MainMenuMgr_RUN" value="60" type="GuiHandlerData"/>
+<property name="MainMenuMgr_REPORTS" value="11" type="GuiHandlerData"/>
+<property name="MainMenuMgr_RUN" value="76" type="GuiHandlerData"/>
 <property name="MainMenuMgr_SETTINGS" value="2" type="GuiHandlerData"/>
 <property name="MainMenuMgr_SIMULATION_WAVEFORM" value="2" type="GuiHandlerData"/>
 <property name="MainMenuMgr_TEXT_EDITOR" value="1" type="GuiHandlerData"/>
-<property name="MainMenuMgr_TOOLS" value="10" type="GuiHandlerData"/>
-<property name="MainMenuMgr_VIEW" value="13" type="GuiHandlerData"/>
-<property name="MainMenuMgr_WINDOW" value="15" type="GuiHandlerData"/>
-<property name="MainWinMenuMgr_LAYOUT" value="16" type="GuiHandlerData"/>
+<property name="MainMenuMgr_TOOLS" value="12" type="GuiHandlerData"/>
+<property name="MainMenuMgr_VIEW" value="16" type="GuiHandlerData"/>
+<property name="MainMenuMgr_WINDOW" value="17" type="GuiHandlerData"/>
+<property name="MainWinMenuMgr_LAYOUT" value="18" type="GuiHandlerData"/>
 <property name="NetlistSchMenuAndMouse_EXPAND_COLLAPSE" value="12" type="GuiHandlerData"/>
 <property name="NetlistSchMenuAndMouse_VIEW" value="17" type="GuiHandlerData"/>
 <property name="NetlistSchematicView_SHOW_CELLS_IN_THIS_SCHEMATIC" value="1" type="GuiHandlerData"/>
@@ -96,14 +96,14 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_SHOW_CONNECTIVITY" value="2" type="GuiHandlerData"/>
 <property name="PACommandNames_SIMULATION_DEFAULT_WAVEFORM_WINDOW" value="2" type="GuiHandlerData"/>
 <property name="PACommandNames_SIMULATION_LIVE_RESTART" value="1" type="GuiHandlerData"/>
-<property name="PACommandNames_SIMULATION_RELAUNCH" value="23" type="GuiHandlerData"/>
+<property name="PACommandNames_SIMULATION_RELAUNCH" value="31" type="GuiHandlerData"/>
 <property name="PACommandNames_SIMULATION_RUN" value="2" type="GuiHandlerData"/>
-<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="50" type="GuiHandlerData"/>
+<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="55" type="GuiHandlerData"/>
 <property name="PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_SRC_REPLACE_FILE" value="1" type="GuiHandlerData"/>
-<property name="PAViews_CODE" value="126" type="GuiHandlerData"/>
+<property name="PAViews_CODE" value="138" type="GuiHandlerData"/>
 <property name="PAViews_DEVICE" value="2" type="GuiHandlerData"/>
-<property name="PAViews_PROJECT_SUMMARY" value="53" type="GuiHandlerData"/>
+<property name="PAViews_PROJECT_SUMMARY" value="54" type="GuiHandlerData"/>
 <property name="PAViews_SCHEMATIC" value="13" type="GuiHandlerData"/>
 <property name="PrimitivesMenu_HIGHLIGHT_LEAF_CELLS" value="17" type="GuiHandlerData"/>
 <property name="PrimitivesMenu_UNFIX_CELLS" value="1" type="GuiHandlerData"/>
@@ -115,7 +115,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="RDICommands_SHOW_WORLD_VIEW" value="1" type="GuiHandlerData"/>
 <property name="RDICommands_UNSELECT_ALL" value="1" type="GuiHandlerData"/>
 <property name="RDICommands_WAVEFORM_SAVE_CONFIGURATION" value="1" type="GuiHandlerData"/>
-<property name="RDIViews_WAVEFORM_VIEWER" value="408" type="GuiHandlerData"/>
+<property name="RDIViews_WAVEFORM_VIEWER" value="473" type="GuiHandlerData"/>
 <property name="SaveProjectUtils_SAVE" value="1" type="GuiHandlerData"/>
 <property name="SaveSchematicDialog_SPECIFY_OUTPUT_PDF_FILE" value="1" type="GuiHandlerData"/>
 <property name="SchMenuAndMouse_EXPAND_CONE" value="13" type="GuiHandlerData"/>
@@ -124,24 +124,24 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SelectMenu_HIGHLIGHT" value="14" type="GuiHandlerData"/>
 <property name="SelectMenu_MARK" value="21" type="GuiHandlerData"/>
 <property name="SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT" value="1" type="GuiHandlerData"/>
-<property name="SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE" value="198" type="GuiHandlerData"/>
-<property name="SimulationScopesPanel_SIMULATE_SCOPE_TABLE" value="163" type="GuiHandlerData"/>
+<property name="SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE" value="218" type="GuiHandlerData"/>
+<property name="SimulationScopesPanel_SIMULATE_SCOPE_TABLE" value="185" type="GuiHandlerData"/>
 <property name="SrcChooserPanel_CREATE_FILE" value="12" type="GuiHandlerData"/>
 <property name="SrcFilePropPanels_ENABLED" value="1" type="GuiHandlerData"/>
 <property name="SrcMenu_IP_HIERARCHY" value="32" type="GuiHandlerData"/>
-<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="8" type="GuiHandlerData"/>
+<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="9" type="GuiHandlerData"/>
 <property name="TaskBanner_CLOSE" value="4" type="GuiHandlerData"/>
 <property name="TaskBanner_USE_THIS_PART_AND_CONSTRAINT_SET" value="1" type="GuiHandlerData"/>
 <property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="15" type="GuiHandlerData"/>
-<property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="169" type="GuiHandlerData"/>
+<property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="249" type="GuiHandlerData"/>
 <property name="WaveformOptionsView_TABBED_PANE" value="2" type="GuiHandlerData"/>
 <property name="WaveformView_GOTO_LAST_TIME" value="1" type="GuiHandlerData"/>
 <property name="WaveformView_GOTO_TIME_0" value="13" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="31" type="GuiMode"/>
+<property name="GuiMode" value="32" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="24" type="TclMode"/>
+<property name="TclMode" value="25" type="TclMode"/>
 </item>
 </section>
 </application>
