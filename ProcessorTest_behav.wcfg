@@ -11,23 +11,19 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="419880fs"></ZoomStartTime>
-      <ZoomEndTime time="564681fs"></ZoomEndTime>
-      <Cursor1Time time="1000000fs"></Cursor1Time>
+      <ZoomStartTime time="311013fs"></ZoomStartTime>
+      <ZoomEndTime time="318294fs"></ZoomEndTime>
+      <Cursor1Time time="317080fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="156"></NameColumnWidth>
-      <ValueColumnWidth column_width="73"></ValueColumnWidth>
+      <ValueColumnWidth column_width="69"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="11" />
+   <WVObjectSize size="9" />
    <wave_markers>
       <marker time="500570" label="" />
    </wave_markers>
    <wvobject fp_name="/ProcessorTest/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ProcessorTest/dut/reg_file/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
@@ -37,7 +33,6 @@
       <wvobject fp_name="/ProcessorTest/dut/reg_file/register" type="array">
          <obj_property name="ElementShortName">register[7:0][7:0]</obj_property>
          <obj_property name="ObjectShortName">register[7:0][7:0]</obj_property>
-         <obj_property name="isExpanded"></obj_property>
       </wvobject>
       <wvobject fp_name="/ProcessorTest/dut/reg_file/RD1" type="array">
          <obj_property name="ElementShortName">RD1[7:0]</obj_property>
@@ -59,7 +54,6 @@
    <wvobject fp_name="group2077" type="group">
       <obj_property name="label">SP</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/ProcessorTest/dut/sp_ctrl/clk" type="logic">
          <obj_property name="ElementShortName">clk</obj_property>
          <obj_property name="ObjectShortName">clk</obj_property>
@@ -160,14 +154,6 @@
          <obj_property name="ElementShortName">oVFlogic2</obj_property>
          <obj_property name="ObjectShortName">oVFlogic2</obj_property>
       </wvobject>
-   </wvobject>
-   <wvobject fp_name="/ProcessorTest/dut/inst_mem/rd" type="array">
-      <obj_property name="ElementShortName">rd[24:0]</obj_property>
-      <obj_property name="ObjectShortName">rd[24:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ProcessorTest/dut/pc_ctrl/pc" type="array">
-      <obj_property name="ElementShortName">pc[7:0]</obj_property>
-      <obj_property name="ObjectShortName">pc[7:0]</obj_property>
    </wvobject>
    <wvobject fp_name="group234" type="group">
       <obj_property name="label">Cond.</obj_property>
@@ -272,7 +258,6 @@
    <wvobject fp_name="group262" type="group">
       <obj_property name="label">MainDecoder</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/ProcessorTest/dut/control_u/dec/m_decoder/op" type="array">
          <obj_property name="ElementShortName">op[3:0]</obj_property>
          <obj_property name="ObjectShortName">op[3:0]</obj_property>
@@ -329,5 +314,9 @@
          <obj_property name="ElementShortName">MemWDSel[1:0]</obj_property>
          <obj_property name="ObjectShortName">MemWDSel[1:0]</obj_property>
       </wvobject>
+   </wvobject>
+   <wvobject fp_name="/ProcessorTest/dut/pc_ctrl/pc" type="array">
+      <obj_property name="ElementShortName">pc[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[7:0]</obj_property>
    </wvobject>
 </wave_config>
