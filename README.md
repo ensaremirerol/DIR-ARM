@@ -97,9 +97,9 @@ Term project of Digital Computer Design course.
 Note: Signals that marked as COND are routed to Conditional Logic Module. Others goes DataPath right away.
 
 
-#### Conditional Logic
+### Conditional Logic
 
-##### Conditions
+#### Conditions
 Conditions checks flags saved in Control Unit and executes operation according to them.
 All Conditions and their requirements listed in following table
 | Condition                    | Mnemonic | Cond. Code | CondEx       | 
@@ -126,19 +126,19 @@ Conditional logic checks flags according to the given condition code. If the con
 
 Note: Condition Logic has a signal named "NoWrite". If that signal is high, no memory operation is allowed.
 
-#### PCPlus
+### PCPlus
 
 Increments given value by 1.
 
-#### PCControl
+### PCControl
 
 Outputs the current PC value and selects the next PC value using PCSRC signal. Outputs the next PC at clocks rising edge.
 
-#### InstructionMemory
+### InstructionMemory
 
 Keeps Instructions and Outputs the instruction at PC address. Instructions are 25 bits.
 
-#### Instruction
+### Instruction
 
 Splits given Instruction according to the Instruction Format
 
@@ -150,7 +150,7 @@ Splits given Instruction according to the Instruction Format
 - 7-5 RB
 - 7-0 Imm
 
-#### SPController
+### SPController
 This Processor uses Data Memories' top addresses as Stack. And SPController points to stacks current position in Data Memory.
 
 Stack grows downwards. 
@@ -160,11 +160,11 @@ At the clocks' rising edge if push signal is 1, SPController decrements Stack Po
 At the clocks' falling edge if pop signal is 1, SPController increments Stack Pointer by 1.
 
 
-#### Register File(register)
+### Register File(register)
 
 Register File consists of 8 Register. Register 7 reserved for PC+2 and Register 6 reserved for Stack Pointer.
 
-#### ALU
+### ALU
 
 ALU can do following operations:
 - ADD
@@ -174,7 +174,7 @@ ALU can do following operations:
 
 ALU' s default operation is ADD
 
-#### Shifter
+### Shifter
 
 Shifter can do following operations:
 - Shift left
@@ -182,7 +182,7 @@ Shifter can do following operations:
 - Rotate left
 - Rotate right
 
-#### DataMemory
+### DataMemory
 
 DataMemory's inputs are:
 - Address
